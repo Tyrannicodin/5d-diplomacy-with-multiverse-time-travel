@@ -1,4 +1,5 @@
 import colours from '../../../utils/colours';
+import css from './expandButton.module.scss'
 
 type ExpandButtonProps = {
   colour: string;
@@ -10,7 +11,7 @@ const ExpandButton = ({ colour, isExpanded, toggleExpand }: ExpandButtonProps) =
   <button
     type="button"
     onClick={toggleExpand}
-    className="relative w-3.5 h-3.5 rounded-full ml-4 opacity-30 hover:opacity-100 cursor-pointer"
+    className={css.container}
     style={{ backgroundColor: colour }}
     aria-label="Expand item"
   >

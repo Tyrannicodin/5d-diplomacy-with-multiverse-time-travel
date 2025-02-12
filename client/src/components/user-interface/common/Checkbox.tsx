@@ -10,7 +10,7 @@ type CheckboxProps = {
 
 const Checkbox = ({ title, value, onChange }: CheckboxProps) => (
   <div className={css.container}>
-    <span>{title}</span>
+    <p>{title}</p>
     <button
       type="button"
       aria-label={title}
